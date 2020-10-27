@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tarea_3.MainPage"
+             Title="UNIVERSIDAD ISRAEL" >
+
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Spacing="5" >
+                <Image Source="uni.png" HeightRequest="90"></Image>
+                <Label Text="Notas  Universidad Israel" HorizontalTextAlignment="Center" TextColor="DarkBlue" FontSize="40">
+                </Label>
+                <Label Text=" NOTAS PRIMER  PARCIAL" TextColor="Coral" FontSize="20">
+                </Label>
+                <Label Text=" Nota1" TextColor="Black"  FontSize="18">
+                </Label>
+                <Entry x:Name="txtNota1" Keyboard="Numeric">
+                </Entry>
+                <Label Text=" Nota2" TextColor="Black" FontSize="18" >
+                </Label>
+                <Entry x:Name="txtNota2" Keyboard="Numeric">
+                </Entry>
+                <Label Text="Examen" TextColor="Black" FontSize="18">
+                </Label>
+                <Entry x:Name="txtExamen" Keyboard="Numeric">
+                </Entry>
+
+                <Label Text="Nota Parcial 1" TextColor="Black" FontSize="18">
+
+                </Label>
+                <Entry x:Name="txtRNP1" IsReadOnly="True">
+
+                </Entry>
+                <Button x:Name="btnNP1"  
+                Text="calcular Nota primer parcial" TextColor="Black"
+                Clicked="btnNP1_Clicked"
+                >
+
+                </Button>
+                <Label Text=" NOTAS SEGUNDO PARCIAL" TextColor="Coral" FontSize="20">
+                </Label>
+                <Label Text=" Nota3 " TextColor="Black" FontSize="18" >
+                </Label>
+                <Entry x:Name="txtNota3" Keyboard="Numeric">
+                </Entry>
+                <Label Text=" Nota4" TextColor="Black" FontSize="18" >
+                </Label>
+                <Entry x:Name="txtNota4" Keyboard="Numeric">
+                </Entry>
+                <Label Text="Examen2" TextColor="Black" FontSize="18">
+                </Label>
+                <Entry x:Name="txtExamen2" Keyboard="Numeric">
+                </Entry>
+
+
+                <Label Text="Nota Parcial 2" TextColor="Black" FontSize="18"></Label>
+                <Entry x:Name="txtRNP2" IsReadOnly="True"></Entry>
+                <Button x:Name="btnNP2"  
+                Text="calcular nota segundo parcial "
+                Clicked="btnNP2_Clicked">
+                </Button>
+
+                <Label Text="Nota Final" TextColor="Black" FontSize="18"></Label>
+                <Entry x:Name="txtNF" IsReadOnly="True"></Entry>
+                <Button x:Name="btnFinal"
+                        Text="NOTA FINAL"
+                        Clicked="btnFinal_Clicked">
+                </Button>
+
+                <Button x:Name="btnResultado"
+                        Text="Resultado"
+                        Clicked="btnResultado_Clicked" >
+                </Button>
+
+
+                <Label Text="Cerrar sesion"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+
+                <Button x:Name="btnSalir"
+                    Text="Cerrar Cesion"
+                    Clicked="btnSalir_Clicked"></Button>
+                
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+
+</ContentPage>
+
+    
